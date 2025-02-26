@@ -89,13 +89,18 @@ git clone https://github.com/Muskan655/TaxGo
 ```bash
 pip install -r requirements.txt
 ```
-5. Set up API keys:
+3. Set up API keys:
 ```bash
 # Create a .env file with your API keys
 touch .env
 # Add the following lines to the .env file:
-# GEMINI_API_KEY=your_gemini_api_key
+# OPEN_API_KEY=your_open_api_key
 ```
+4. Run:
+```bash
+   streamlit run app.py
+```
+
 
 
 ## Credits
