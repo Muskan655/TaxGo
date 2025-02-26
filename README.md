@@ -73,6 +73,7 @@ Our AI-powered Tax Assistant simplifies the tax filing process by:
 ### Step 4: Match Expenses with Deduction Rules
 - Compare user's expense CSV with extracted tax deduction rules.
 - Identify valid deductions and non-deductible expenses.
+- Calculate Net taxable income and compute tax using income-tax slabs.
   
 ## Installation
 
