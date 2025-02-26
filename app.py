@@ -1,9 +1,13 @@
 import streamlit as st
 import pandas as pd
 import openai
-
+import Frontend.expense_bucket
+import Frontend.income_calculator
+import Frontend.dashboard
 # Set Streamlit Page Config
 st.set_page_config(page_title="TaxGo AI", page_icon="💰", layout="wide")
+
+#Apply Css Styles
 st.markdown("""
     <style>
         /* Global Text Color - White (Except Inputs & Buttons) */
@@ -75,11 +79,9 @@ st.markdown("""
         }
 
         /* Increase Section Spacing */
-        .spacer { margin-bottom: 200px; }
+        .spacer { margin-bottom: 500px; }
     </style>
 """, unsafe_allow_html=True)
-
-    
 
 # 🔹 Sidebar Navigation
 st.sidebar.title("📌 TaxGo AI Navigation")
@@ -136,40 +138,14 @@ elif section == "📰 News & Updates":
 
 # 🔹 Expense Bucket
 elif section == "📊 Expense Bucket":
-    st.subheader("💳 Track Your Tax-Deductible Expenses")
-    
-    uploaded_file = st.file_uploader("Upload Expense CSV", type=["csv"])
-    
-    if uploaded_file:
-        df = pd.read_csv(uploaded_file)
-        st.dataframe(df)
-
+    Frontend.expense_bucket.run()
 # 🔹 Dashboard
 elif section == "📈 Dashboard":
-    st.subheader("📊 Tax Overview Dashboard")
-    st.metric("Total Income", "₹12,00,000")
-    st.metric("Tax Paid", "₹1,80,000")
-    st.metric("Deductions", "₹2,00,000")
+    Frontend.dashboard.run()
 
 # 🔹 Income Tax Calculator
 elif section == "🧮 Income Tax Calculator":
-    st.subheader("🧮 Calculate Your Income Tax")
-    
-    income = st.number_input("Enter Your Annual Income (₹)", value=500000)
-    deductions = st.number_input("Enter Eligible Deductions (₹)", value=50000)
-    
-    taxable_income = max(0, income - deductions)
-    
-    if taxable_income <= 250000:
-        tax = 0
-    elif taxable_income <= 500000:
-        tax = (taxable_income - 250000) * 0.05
-    elif taxable_income <= 1000000:
-        tax = 12500 + (taxable_income - 500000) * 0.2
-    else:
-        tax = 112500 + (taxable_income - 1000000) * 0.3
-
-    st.write(f"**Estimated Tax: ₹{tax:,.2f}**")
+    Frontend.income_calculator.run()
 
 # 🔹 E-Filing Tool
 elif section == "📝 E-Filing Tool":
