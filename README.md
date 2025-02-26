@@ -37,22 +37,25 @@ Our AI-powered Tax Assistant simplifies the tax filing process by:
 ## Features Demo:
 
 ### **🔹 Login Page**
-<img src="assests/Login.png" width="400px"/>
+<img src="assests/Login.png" />
 
 ### **🔹 News Section**
-<img src="assests/news.png" alt="News" width="400px"/>
+<img src="assests/news.png" alt="News" />
 
 ### **🔹 Expense Bucket**
-<img src="assests/EXpensebuckett.png" alt="Expense Bucket" width="400px"/>
+<img src="assests/Expbuckett.png" alt="Expense Bucket" />
+### **🔹 Dashboard**
+<img src="assests/dashboard1.png" alt="Expense Bucket"/>
+<img src="assests/Dashboard2.png" alt="Expense Bucket" />
 
 ### **🔹 Income Tax Calculator**
-<img src="assests/calc%20(2).png" alt="Calculator" width="400px"/>
+<img src="assests/ Calc.png" alt="Calculator" />
 
 ### **🔹 Library**
-<img src="assests/library.png" alt="Library" width="400px"/>
+<img src="assests/library.png" alt="Library" />
 
 ### **🔹 Family Planner**
-<img src="assests/planner.png" alt="Planner" width="400px"/>
+<img src="assests/planner.png" alt="Planner" />
 
 ## Step-by-Step Algorithm for AI-Based Tax Calculation
 ### Step 1: Upload Receipts & Extract Data
