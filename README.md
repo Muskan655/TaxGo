@@ -44,6 +44,7 @@ Our AI-powered Tax Assistant simplifies the tax filing process by:
 
 ### **🔹 Expense Bucket**
 <img src="assests/Expbuckett.png" alt="Expense Bucket" />
+
 ### **🔹 Dashboard**
 <img src="assests/dashboard1.png" alt="Expense Bucket"/>
 <img src="assests/Dashboard2.png" alt="Expense Bucket" />
@@ -72,7 +73,7 @@ Our AI-powered Tax Assistant simplifies the tax filing process by:
 ### Step 4: Match Expenses with Deduction Rules
 - Compare user's expense CSV with extracted tax deduction rules.
 - Identify valid deductions and non-deductible expenses.
-- 
+  
 ## Installation
 
 ### Prerequisites
@@ -94,7 +95,7 @@ pip install -r requirements.txt
 # Create a .env file with your API keys
 touch .env
 # Add the following lines to the .env file:
-# OPEN_API_KEY=your_open_api_key
+ OPEN_API_KEY=your_open_api_key
 ```
 4. Run:
 ```bash
