@@ -7,3 +7,4 @@ Pillow
 pdf2image
 opencv-python
 PyMuPDF
+PyPDF2
