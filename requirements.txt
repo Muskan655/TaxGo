@@ -5,4 +5,4 @@ plotly
 pytesseract
 Pillow
 pdf2image
-opencv-python
+opencv-python==4.9.0
