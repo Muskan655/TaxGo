@@ -1,5 +1,6 @@
-PyPDF2
 openai
 streamlit
 pandas
 plotly
+pytesseract
+Pillow 
