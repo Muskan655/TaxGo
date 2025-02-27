@@ -108,4 +108,4 @@ touch .env
 
 ## Credits
 
-- Developed by Muskan
+- Developed by Muskan with ❤️
